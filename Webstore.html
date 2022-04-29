@@ -5,10 +5,30 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header class="font-effect-black">Webstore</header>
-        <div>
+        <h1>Webstore</h1> 
+        <form id="myForm" onsubmit="formCheck()" action="Webstore.php" method="post">
+            <div id ="header">
+                Username: <input type="text" name="userName" id="userName"> <br>
+                <br>
+                Password: <input type="password" name="password" id="password"> <br>
+            </div>
+            <br>
+            <input type="radio" name="item1" value="99.99" id="item1"> Item 1: iPhone <span style="color:black">$99.99</span> <br> 
+            Amount: <input type="text" name="amount1" id="amount1"> <br> <br>
+            <input type="radio" name="item2" value="0.10" id="item2"> Item 2: Gum <span style="color:black">$0.10</span> <br>
+            Amount: <input type="text" name="amount2" id="amount2"> <br> <br>
+            <input type="radio" name="item3" value="399.99" id="item3"> Item 3: TV <span style="color:black">$399.99</span> <br>
+            Amount: <input type="text" name="amount3" id="amount3"> <br>
+            <br>
+            Shipping:
+            <br>
+            <div>
+                <input type="radio" name="ship" value="Free" id="ship">Free 7 Day <br>
+                <input type="radio" name="ship" value="Over night" id="ship">Over night: $50.00 <br>
+                <input type="radio" name="ship" value="3 Day" id="ship">3 Day: $5.00 <br> <br>
+            </div>
             <button type="submit" name="submit">Submit</button>
             <button type="reset" name="reset">Reset</button>
-        </div>
+        </form>
     </body>
 </html>
